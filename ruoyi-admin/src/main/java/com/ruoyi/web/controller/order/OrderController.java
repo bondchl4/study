@@ -7,6 +7,11 @@ import com.ruoyi.system.service.IOrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+/**
+ * charle修改与2025.8.10
+ */
+
+
 @RestController
 @RequestMapping("/orders")
 public class OrderController extends BaseController {
@@ -19,8 +24,5 @@ public class OrderController extends BaseController {
         return toAjax(orderService.insert(orders));
     }
 
-//    @GetMapping(value="/{orderId}")
-//    public AjaxResult getOrderInfo(@PathVariable("orderId") Long orderId){
-//        return success(orderService.selectByPrimaryKey(orderId));
-//    }
+
 }
